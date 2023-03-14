@@ -1,0 +1,13 @@
+.card {
+  background: var(--grey-background);
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.card_vertical {
+  flex-direction: column;
+  padding-right: 27px;
+  padding-left: 27px;
+}

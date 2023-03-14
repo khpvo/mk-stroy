@@ -27,6 +27,7 @@
   max-width: 75vw;
   max-height: 75vh;
   display: block;
+  border-radius: 10px;
 }
 
 .popup__close-button {

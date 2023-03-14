@@ -25,7 +25,7 @@ orderFileInput.addEventListener('change', () => {
   orderFileName.textContent = orderFileInput.files[0].name;
 });
 
-const swiper = new Swiper('.certificates__swiper', {
+const swiperCertificates = new Swiper('.certificates__swiper', {
   slidesPerView: 4,
   spaceBetween: 10,
   grabCursor: true,
@@ -43,4 +43,16 @@ Array.from(certificatesImages).forEach((img) => {
   img.addEventListener('click', () => {
     popupWithImage.open(img.src);
   })
+});
+
+const swiperNews = new Swiper('.news__swiper', {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  grabCursor: true,
+});
+
+const swiperArticle = new Swiper('.article__swiper', {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  grabCursor: true,
 });
