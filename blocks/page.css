@@ -1,0 +1,10 @@
+.page {
+  background-color: #fff;
+  font-family: 'Gilroy', sans-serif;
+  box-sizing: border-box;
+  color: #000;
+  --content-width: 1070px;
+  --orange-color: #EA662A;
+  --dark-background: #212121;
+  --grey-background: #F0F0F0;
+}
