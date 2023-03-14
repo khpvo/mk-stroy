@@ -25,6 +25,16 @@ orderFileInput.addEventListener('change', () => {
   orderFileName.textContent = orderFileInput.files[0].name;
 });
 
+const swiperHero = new Swiper('.hero__swiper', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.hero__btn_next',
+    prevEl: '.hero__btn_back',
+  },
+});
+
 const swiperCertificates = new Swiper('.certificates__swiper', {
   slidesPerView: 4,
   spaceBetween: 10,

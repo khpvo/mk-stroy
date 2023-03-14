@@ -8,6 +8,13 @@
   margin-bottom: 25px;
 }
 
+.article__img {
+  border-radius: 10px;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
 .article__heading {
   line-height: 20px;
   margin: 15px 0;
@@ -17,4 +24,21 @@
   height: 106px;
   overflow: hidden;
   margin-bottom: 20px;
+}
+
+.article__link {
+  display: flex;
+}
+
+.article__link:hover.article__link::after {
+  background-image: url(../images/long-orange-arrow_right.svg);
+}
+
+.article__link::after {
+  display: block;
+  content: '';
+  width: 56px;
+  height: 9px;
+  background: url(../images/long-white-arrow_right.svg) no-repeat center / cover;
+  margin-left: 38px;
 }
