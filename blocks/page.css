@@ -8,3 +8,10 @@
   --dark-background: #212121;
   --grey-background: #F0F0F0;
 }
+
+@media screen and (max-width: 1439px) {
+  .page {
+    --content-width: 950px
+  }
+
+}

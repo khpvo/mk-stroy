@@ -7,7 +7,7 @@
 
 .footer__content {
   width: 1210px;
-  height: 114px;
+  min-height: 114px;
   margin: 0 auto;
   display: grid;
   grid-template-areas:
@@ -104,4 +104,19 @@
 
 .footer__contacts-bold {
   font-weight: 700;
+}
+
+@media screen and (max-width: 1439px) {
+  .footer__content {
+    width: 900px;
+    column-gap: 90px;
+  }
+
+  .footer__contacts {
+    width: 62%;
+  }
+
+  .footer__info {
+    justify-content: flex-end;
+  }
 }

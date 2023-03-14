@@ -48,3 +48,11 @@
   background: url(../images/white-short-arrow_right.svg) no-repeat center / cover;
   margin-left: 12px;
 }
+
+@media screen and (max-width: 1439px) {
+  .news__link::after {
+    width: 25px;
+    height: 5px;
+    margin-left: 4px;
+  }
+}
