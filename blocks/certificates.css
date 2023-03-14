@@ -1,0 +1,49 @@
+.certificates {
+  width: 94%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificates__title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.certificates__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificates__swiper {
+  width: 100%;
+}
+
+.certificates__btn {
+  display: block;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.certificates__btn_back {
+  background: url(../images/swiper__back.svg) no-repeat center / contain;
+}
+
+.certificates__btn_next {
+  background: url(../images/swiper__next.svg) no-repeat center / contain;
+}
+
+.certificates__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+}

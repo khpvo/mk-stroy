@@ -1,3 +1,5 @@
+import PopupWithImage from "../components/PopupWithImage.js";
+
 const orderBtn = document.querySelector('.order__button');
 const orderBtnTxt = orderBtn.querySelector('.order__button-txt');
 const orderArrow = document.querySelector('.order__arrow');
@@ -23,3 +25,22 @@ orderFileInput.addEventListener('change', () => {
   orderFileName.textContent = orderFileInput.files[0].name;
 });
 
+const swiper = new Swiper('.certificates__swiper', {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.certificates__btn_next',
+    prevEl: '.certificates__btn_back',
+  },
+});
+
+const certificatesImages = document.querySelectorAll('.certificates__img');
+const popupWithImage = new PopupWithImage('.popup_type_fz-photo');
+popupWithImage.setEventListeners();
+
+Array.from(certificatesImages).forEach((img) => {
+  img.addEventListener('click', () => {
+    popupWithImage.open(img.src);
+  })
+});

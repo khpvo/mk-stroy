@@ -1,0 +1,60 @@
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .6s ease;
+  z-index: 5;
+}
+
+.popup_opened {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup__photo-container {
+  position: relative;
+}
+
+.popup__image {
+  max-width: 75vw;
+  max-height: 75vh;
+  display: block;
+}
+
+.popup__close-button {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(../images/close.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  cursor: pointer;
+  transition: all .4s ease;
+  border: none;
+  background-color: transparent;
+}
+
+.popup__close-button:hover {
+  opacity: .6;
+}
+
+@media screen and (max-width: 450px) {
+
+  .popup__close-button {
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: -36px;
+  }
+}

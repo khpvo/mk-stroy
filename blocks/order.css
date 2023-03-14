@@ -45,12 +45,12 @@
   transition: all .4s ease;
   visibility: visible;
   opacity: 1;
+  height: 1px;
 }
 
 .order__form_closed {
   visibility: hidden;
   opacity: 0;
-  height: 0;
 }
 
 .order__input {

@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>МК Строй</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./pages/index.css">
+
 </head>
 
 <body class="page">
@@ -324,8 +326,48 @@
         </form>
       </div>
     </section>
+    <section class="certificates">
+      <h2 class="certificates__title title">Сертификаты</h2>
+      <div class="certificates__container">
+        <span class="certificates__btn certificates__btn_back"></span>
+        <div class="certificates__swiper swiper">
+          <ul class="certificates__wrapper swiper-wrapper list">
+            <li class="certificates__slide swiper-slide">
+              <img src="./images/certificate.jpg" alt="Сертификат" class="certificates__img">
+            </li>
+            <li class="certificates__slide swiper-slide">
+              <img src="./images/certificate.jpg" alt="Сертификат" class="certificates__img">
+            </li>
+            <li class="certificates__slide swiper-slide">
+              <img src="./images/certificate.jpg" alt="Сертификат" class="certificates__img">
+            </li>
+            <li class="certificates__slide swiper-slide">
+              <img src="./images/certificate.jpg" alt="Сертификат" class="certificates__img">
+            </li>
+            <li class="certificates__slide swiper-slide">
+              <img src="./images/certificate.jpg" alt="Сертификат" class="certificates__img">
+            </li>
+            <li class="certificates__slide swiper-slide">
+              <img src="./images/certificate.jpg" alt="Сертификат" class="certificates__img">
+            </li>
+            <li class="certificates__slide swiper-slide">
+              <img src="./images/certificate.jpg" alt="Сертификат" class="certificates__img">
+            </li>
+          </ul>
+        </div>
+        <span class="certificates__btn certificates__btn_next"></span>
+      </div>
+    </section>
   </main>
-  <script src="./pages/index.js" type="module"></script>
+  <footer class="footer"></footer>
+  <div class="popup popup_type_fz-photo">
+    <div class="popup__photo-container">
+      <img class="popup__image">
+      <button type="button" class="popup__close-button" aria-label="Кнопка закрытия попапа"></button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script type="module" src="./pages/index.js"></script>
 </body>
 
 </html>
