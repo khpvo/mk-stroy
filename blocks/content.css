@@ -2,3 +2,15 @@
   width: var(--content-width);
   margin: 0 auto;
 }
+
+@media screen and (max-width: 1023px) {
+  .content {
+    margin-top: 85px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    margin-top: 60px;
+  }
+}

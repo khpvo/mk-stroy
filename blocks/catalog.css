@@ -3,7 +3,7 @@
   grid-area: catalog;
 }
 
-.catalog__list {
+.catalog__content {
   width: 300px;
   position: absolute;
 }
@@ -38,16 +38,17 @@
   transform: translateY(-50%);
 }
 
-.catalog__item:first-child {
+.catalog__btn {
   height: 37px;
   color: #fff;
   border: 1px solid #FFFFFF;
   background-color: transparent;
   margin-bottom: 20px;
-}
-
-.catalog__item:first-child::after {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .catalog__item:hover .catalog__box {
@@ -101,11 +102,98 @@
 }
 
 @media screen and (max-width: 1439px) {
-  .catalog__list {
+  .catalog__content {
     width: 262px;
   }
 
   .catalog__box {
     right: -119%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+
+  .catalog {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .6s ease;
+    transform: translateY(-200%);
+    height: 1px;
+  }
+
+  .catalog_opened {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+    height: unset;
+  }
+
+  .catalog__btn {
+    background: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 34px;
+  }
+
+  .catalog__arrow-black {
+    width: 24px;
+    height: 24px;
+    background: url(../images/arrow-black__down.svg) no-repeat center / contain;
+    display: block;
+    position: absolute;
+    right: 15px;
+    transition: all .4s ease;
+  }
+
+  .catalog__arrow-black_opened {
+    transform: rotate(180deg);
+  }
+
+  .catalog__btn .catalog__link {
+    font-weight: 600;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .catalog__content {
+    position: static;
+    width: 100%;
+  }
+
+  .catalog__box {
+    display: none;
+  }
+
+  .catalog__list {
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    top: -10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease;
+  }
+
+  .catalog__list_opened {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .catalog__item {
+    background: none;
+  }
+
+  .catalog__item:hover {
+    border-color: transparent;
+  }
+
+  .catalog__item::after {
+    display: none;
   }
 }

@@ -15,3 +15,13 @@
   }
 
 }
+
+@media screen and (max-width: 1023px) {
+  .page {
+    --content-width: 88%;
+  }
+
+  .page_opened {
+    overflow: hidden;
+  }
+}

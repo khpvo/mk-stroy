@@ -42,3 +42,34 @@
   background: url(../images/long-white-arrow_right.svg) no-repeat center / cover;
   margin-left: 38px;
 }
+
+.article__pagination {
+  margin: 25px auto 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 50% !important;
+  height: 17px;
+  display: none;
+}
+
+.article__pagination .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background-color: #D9D9D9;
+  display: block;
+  border-radius: 3px;
+  opacity: 1;
+  transition: all .4s ease;
+}
+
+.article__pagination .swiper-pagination-bullet-active {
+  background-color: var(--orange-color);
+  width: 17px;
+  height: 17px;
+}
+
+@media screen and (max-width: 1023px) {
+  .article__pagination {
+    display: flex;
+  }
+}

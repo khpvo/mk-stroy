@@ -75,6 +75,10 @@
   display: none;
 }
 
+.order__input_type_textarea {
+  height: 95px;
+}
+
 .order__submit {
   width: 100%;
 }
@@ -120,4 +124,24 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+@media screen and (max-width: 1023px) {
+  .order {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .order {
+    padding-bottom: 10px;
+  }
+
+  .order__content {
+    width: 90%;
+  }
+
+  .order__input_type_textarea {
+    height: 149px;
+  }
 }
