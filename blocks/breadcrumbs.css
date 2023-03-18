@@ -1,0 +1,22 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.breadcrumbs__link {
+  transition: all .4s ease;
+}
+
+.breadcrumbs__link_active {
+  text-decoration: underline;
+}
+
+.breadcrumbs__link:hover {
+  opacity: .6;
+}
+
+.breadcrumbs__line {
+  margin: 0 8px;
+}

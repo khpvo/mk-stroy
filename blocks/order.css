@@ -2,9 +2,12 @@
   background-color: var(--dark-background);
   border-radius: 10px;
   padding: 17px 0 32px;
-  margin: 0 auto 103px;
-  margin-bottom: 103px;
+  margin: 0 auto;
   overflow: hidden;
+}
+
+.order_other-pages {
+  border-radius: 0;
 }
 
 .order__content {
@@ -47,6 +50,10 @@
   visibility: visible;
   opacity: 1;
   height: 1px;
+}
+
+.order__form_opened {
+  height: unset;
 }
 
 .order__form_closed {
@@ -126,15 +133,13 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 1023px) {
-  .order {
-    margin-bottom: 30px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .order {
     padding-bottom: 10px;
+  }
+
+  .order_other-pages {
+    padding-bottom: 50px;
   }
 
   .order__content {

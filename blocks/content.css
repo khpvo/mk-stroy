@@ -3,9 +3,25 @@
   margin: 0 auto;
 }
 
+.content__wrapper {
+  width: 750px;
+  margin-left: auto;
+  padding-top: 22px;
+}
+
+@media screen and (max-width: 1439px) {
+  .content__wrapper {
+    width: 650px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .content {
     margin-top: 85px;
+  }
+
+  .content__wrapper {
+    width: 100%;
   }
 }
 

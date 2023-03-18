@@ -1,6 +1,6 @@
 .certificates {
   width: 94%;
-  margin: 0 auto;
+  margin: 103px auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,4 +47,10 @@
   display: block;
   border-radius: 10px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .certificates {
+    margin-top: 30px;
+  }
 }

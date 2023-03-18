@@ -1,9 +1,6 @@
-export default class form {
+export default class Form {
   constructor(formName) {
     this._form = document.forms[formName];
-    this._orderBtn = document.querySelector('.order__button');
-    this._orderBtnTxt = this._orderBtn.querySelector('.order__button-txt');
-    this._orderArrow = this._orderBtn.querySelector('.order__arrow');
 
     this._orderFileInput = this._form.querySelector('.order__input_type_file');
     this._orderFileName = this._form.querySelector('.order__file-name');
@@ -29,10 +26,16 @@ export default class form {
   }
 
   setEventListeners() {
-    this._orderBtn.addEventListener('click', () => {
-      this._toggleFormOpen();
-      this._controlFormState();
-    })
+    if (this._orderBtn = document.querySelector('.order__button')) {
+      this._orderBtn = document.querySelector('.order__button');
+      this._orderBtnTxt = this._orderBtn.querySelector('.order__button-txt');
+      this._orderArrow = this._orderBtn.querySelector('.order__arrow');
+
+      this._orderBtn.addEventListener('click', () => {
+        this._toggleFormOpen();
+        this._controlFormState();
+      })
+    }
 
     this._orderFileInput.addEventListener('change', () => {
       this._setFileName();
