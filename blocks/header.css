@@ -138,9 +138,12 @@
   }
 
   .header_opened {
-    background: var(--dark-background);
     height: 100vh;
     overflow: scroll;
+  }
+
+  .header_dark-bg {
+    background: var(--dark-background);
   }
 
   .header__content {

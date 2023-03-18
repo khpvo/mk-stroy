@@ -23,7 +23,7 @@
   position: absolute;
   bottom: 4px;
   left: 0;
-  width: 100%;
+  width: 20%;
   height: 1px;
   z-index: 2;
   border-bottom: 2px solid var(--orange-color);
@@ -33,11 +33,13 @@
 .menu__item:hover.menu__item::after {
   opacity: 1;
   visibility: visible;
+  width: 100%;
 }
 
 .menu__item_active.menu__item::after {
   opacity: 1;
   visibility: visible;
+  width: 100%;
 }
 
 .menu__link {

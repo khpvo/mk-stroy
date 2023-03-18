@@ -21,13 +21,24 @@ export default class HeaderMenu {
     }
   }
 
+  _toggleHeader() {
+    if (this._header.classList.contains('header_dark-bg')) {
+      setTimeout(() => {
+        this._header.classList.remove('header_dark-bg');
+      }, 400)
+    }
+
+    this._header.classList.toggle('header_opened');
+    this._header.classList.add('header_dark-bg');
+  }
+
   _toggleMenu() {
+    this._page.classList.toggle('page_opened');
+
     this._menuBtn.classList.toggle('header__menu-btn_opened');
     this._headerCatalog.classList.toggle('catalog_opened');
     this._headerMenu.classList.toggle('menu__nav_opened');
     this._headerInfo.classList.toggle('header__info-container_opened');
-    this._header.classList.toggle('header_opened');
-    this._page.classList.toggle('page_opened');
 
     this._changeHeight(this._headerMenu, 'menu__nav_opened');
     this._changeHeight(this._headerInfo, 'header__info-container_opened');
@@ -44,6 +55,7 @@ export default class HeaderMenu {
   setEventListeners() {
     this._menuBtn.addEventListener('click', () => {
       this._toggleMenu();
+      this._toggleHeader();
     })
 
     this._catalogBtn.addEventListener('click', () => {
