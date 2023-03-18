@@ -107,6 +107,11 @@
   height: 30px;
   background: url(../images/menu__btn.svg) no-repeat center / contain;
   grid-area: menu-btn;
+  transition: all .4s ease;
+}
+
+.header__menu-btn_opened {
+  background-image: url(../images/close.svg);
 }
 
 @media screen and (max-width: 1439px) {
