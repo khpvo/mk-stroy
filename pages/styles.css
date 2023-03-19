@@ -15,6 +15,7 @@
 @import url(../blocks/catalog.css);
 @import url(../blocks/menu.css);
 
+@import url(../blocks/choose.css);
 @import url(../blocks/hero.css);
 @import url(../blocks/order.css);
 @import url(../blocks/certificates.css);
@@ -26,3 +27,4 @@
 @import url(../blocks/breadcrumbs.css);
 @import url(../blocks/bridges.css);
 @import url(../blocks/cart.css);
+@import url(../blocks/delivery.css);

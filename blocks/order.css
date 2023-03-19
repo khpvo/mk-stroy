@@ -15,6 +15,19 @@
   margin: 0 auto;
 }
 
+.order__content_blueprint {
+  margin-right: 0;
+  margin-left: 60px;
+}
+
+.order__content_blueprint .order__title {
+  text-align: start;
+}
+
+.order__content_blueprint .order__txt {
+  text-align: start;
+}
+
 .order__title {
   color: #fff;
   text-align: center;
@@ -131,6 +144,21 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+@media screen and (max-width: 1023px) {
+  .order__content_blueprint {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .order__content_blueprint .order__title {
+    text-align: center;
+  }
+
+  .order__content_blueprint .order__txt {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 767px) {

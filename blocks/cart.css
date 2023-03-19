@@ -1,5 +1,4 @@
 .cart {
-  min-height: 500px;
   margin-bottom: 100px;
 }
 
@@ -166,7 +165,6 @@
 
 @media screen and (max-width: 767px) {
   .cart {
-    min-height: unset;
     margin-bottom: 46px;
   }
 

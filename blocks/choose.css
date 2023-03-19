@@ -1,0 +1,49 @@
+.choose {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.choose__arrow {
+  display: block;
+  width: 40px;
+  height: 33px;
+  background: url(../images/arrow__left.svg) no-repeat center / contain;
+  margin-right: 17px;
+}
+
+.choose__descr {
+  max-width: 484px;
+}
+
+@media screen and (max-width: 1023px) {
+  .choose {
+    flex-direction: row-reverse;
+    padding-top: 15px;
+    height: 64px;
+    margin-bottom: 15px;
+  }
+
+  .choose__arrow {
+    background-image: url(../images/hero-arrow__up.svg);
+    height: 100%;
+    width: 8px;
+    margin-right: 11px;
+  }
+
+  .choose__descr {
+    text-align: end;
+    margin-right: 12px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .choose {
+    height: 106px;
+  }
+
+  .choose__arrow {
+    width: 16px;
+    margin-right: 7px;
+  }
+}

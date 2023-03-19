@@ -264,7 +264,7 @@
           <li class="menu__item">
             <a href="./index.html" class="menu__link link txt">главная</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item menu__item_active">
             <a href="./blueprint.html" class="menu__link link txt">ЖБИ по чертежам</a>
           </li>
           <li class="menu__item">
@@ -288,103 +288,58 @@
       <div class="breadcrumbs">
         <a href="./index.html" class="breadcrumbs__link link txt">Главная</a>
         <span class="breadcrumbs__line">/</span>
-        <a href="#" class="breadcrumbs__link link txt">Каталог</a>
-        <span class="breadcrumbs__line">/</span>
-        <a href="./bridges.html" class="breadcrumbs__link breadcrumbs__link_active link txt">Мостовые сооружения</a>
+        <a href="./blueprint.html" class="breadcrumbs__link breadcrumbs__link_active link txt">ЖБИ по чертежам</a>
       </div>
-      <section class="bridges">
-        <h1 class="bridges__title title">Изделия для мостового строительства от производителя</h1>
-        <p class="bridges__txt txt txt_mb">
-          МК-Строй осуществляет производство и поставку специализированных железобетонных конструкций для мостостроения
-          и возведения мостовых конструкций, искусственных сооружений и др. в соответствии с техническими условиями и
-          ГОСТ.
-        </p>
-        <h2 class="bridges__title title">Готовые изделия:</h2>
-        <ul class="bridges__list list">
-          <li class="bridges__item card">
-            <img src="./images/bridges__img.jpg" alt="Контекстное изображение" class="bridges__img">
-            <div class="bridges__content">
-              <h3 class="bridges__subtitle title">Несъёмная опалубка из СФБ</h3>
-              <p class="bridges__txt txt">
-                Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание
-                Краткое Краткое описание Краткое Краткое описание Кра
-              </p>
-              <a href="#" class="bridges__link button button_background_light link">Подробнее</a>
-            </div>
-          </li>
-          <li class="bridges__item card">
-            <img src="./images/bridges__img.jpg" alt="Контекстное изображение" class="bridges__img">
-            <div class="bridges__content">
-              <h3 class="bridges__subtitle title">Несъёмная опалубка из СФБ</h3>
-              <p class="bridges__txt txt">
-                Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание
-                Краткое Краткое описание Краткое Краткое описание Кра
-              </p>
-              <a href="#" class="bridges__link button button_background_light link">Подробнее</a>
-            </div>
-          </li>
-          <li class="bridges__item card">
-            <img src="./images/bridges__img.jpg" alt="Контекстное изображение" class="bridges__img">
-            <div class="bridges__content">
-              <h3 class="bridges__subtitle title">Несъёмная опалубка из СФБ</h3>
-              <p class="bridges__txt txt">
-                Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание
-                Краткое Краткое описание Краткое Краткое описание Кра
-              </p>
-              <a href="#" class="bridges__link button button_background_light link">Подробнее</a>
-            </div>
-          </li>
-          <li class="bridges__item card">
-            <img src="./images/bridges__img.jpg" alt="Контекстное изображение" class="bridges__img">
-            <div class="bridges__content">
-              <h3 class="bridges__subtitle title">Несъёмная опалубка из СФБ</h3>
-              <p class="bridges__txt txt">
-                Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание
-                Краткое Краткое описание Краткое Краткое описание Кра
-              </p>
-              <a href="#" class="bridges__link button button_background_light link">Подробнее</a>
-            </div>
-          </li>
-          <li class="bridges__item card">
-            <img src="./images/bridges__img.jpg" alt="Контекстное изображение" class="bridges__img">
-            <div class="bridges__content">
-              <h3 class="bridges__subtitle title">Несъёмная опалубка из СФБ</h3>
-              <p class="bridges__txt txt">
-                Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание Краткое описание
-                Краткое Краткое описание Краткое Краткое описание Кра
-              </p>
-              <a href="#" class="bridges__link button button_background_light link">Подробнее</a>
-            </div>
-          </li>
-
-        </ul>
+      <div class="choose">
+        <span class="choose__arrow"></span>
+        <div class="choose__descr">
+          <h1 class="choose__title title">Выбирайте готовые изделия в Каталоге</h1>
+          <p class="choose__txt txt">
+            На сегодняшний день каталог производимых железобетонных изделий составляет более 3500
+            наименований
+          </p>
+        </div>
+      </div>
+      <section class="order">
+        <div class="order__content order__content_blueprint">
+          <h2 class="order__title title">Или закажите производство по чертежам:</h2>
+          <p class="order__txt txt">
+            Специалисты нашей компании готовы принять заказ по индивидуальным чертежам,
+            помочь с расчетом параметров, стоимости и сроков поставки
+          </p>
+          <form name="order" class="order__form order__form_opened">
+            <input name="name" id="name" type="text" class="order__input" placeholder="Фамилия Имя Отчество">
+            <input name="phone" id="phone" type="tel" class="order__input" placeholder="+7 (999) 999-99-99">
+            <textarea name="commentary" class="order__input order__input_type_textarea"
+              placeholder="Комментарий"></textarea>
+            <label for="file" class="order__label">
+              <input id="file" name="file" type="file" class="order__input order__input_type_file">
+              <div class="order__file order__input">
+                <p class="order__file-txt txt">Файл чертежа или проекта:</p>
+                <div class="order__file-bottom">
+                  <span type="button" class="order__file-btn button button_background_dark">Выбрать файл</span>
+                  <span class="order__file-name"></span>
+                </div>
+              </div>
+            </label>
+            <button type="submit" class="order__submit button button_background_dark">получить рассчет</button>
+          </form>
+        </div>
       </section>
     </div>
   </main>
-  <section class="order order_other-pages">
-    <div class="order__content">
-      <h2 class="order__title title">Или закажите производство по чертежам:</h2>
-      <p class="order__txt txt">
-        Специалисты нашей компании готовы принять заказ по индивидуальным чертежам,
-        помочь с расчетом параметров, стоимости и сроков поставки
-      </p>
-      <form name="order" class="order__form order__form_opened">
-        <input name="name" id="name" type="text" class="order__input" placeholder="Фамилия Имя Отчество">
-        <input name="phone" id="phone" type="tel" class="order__input" placeholder="+7 (999) 999-99-99">
-        <textarea name="commentary" class="order__input order__input_type_textarea"
-          placeholder="Комментарий"></textarea>
-        <label for="file" class="order__label">
-          <input id="file" name="file" type="file" class="order__input order__input_type_file">
-          <div class="order__file order__input">
-            <p class="order__file-txt txt">Файл чертежа или проекта:</p>
-            <div class="order__file-bottom">
-              <span type="button" class="order__file-btn button button_background_dark">Выбрать файл</span>
-              <span class="order__file-name"></span>
-            </div>
-          </div>
-        </label>
-        <button type="submit" class="order__submit button button_background_dark">получить рассчет</button>
-      </form>
+  <section class="delivery">
+    <div class="delivery__content">
+      <div class="delivery__container">
+        <img src="./images/delivery__img-1.jpg" alt="Контекстное фото" class="delivery__img">
+        <img src="./images/delivery__img-2.jpg" alt="Контекстное фото" class="delivery__img">
+        <div class="delivery__box">
+          <h3 class="delivery__title title">ДОСТАВКА ПО ВСЕЙ РОССИИ</h3>
+          <p class="delivery__txt txt">Поставляем железобетон даже в самые отдаленные уголки РФ</p>
+        </div>
+        <img src="./images/delivery__img-3.jpg" alt="Контекстное фото" class="delivery__img">
+        <img src="./images/delivery__img-4.jpg" alt="Контекстное фото" class="delivery__img">
+      </div>
     </div>
   </section>
   <footer class="footer">
