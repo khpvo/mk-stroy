@@ -1,0 +1,28 @@
+.production__photos {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.production__img {
+  width: 171px;
+  height: 171px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1439px) {
+  .production__img {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .production__img {
+    width: 48%;
+  }
+}
