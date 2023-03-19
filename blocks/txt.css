@@ -8,3 +8,8 @@
 .txt_mb {
   margin-bottom: 15px;
 }
+
+.txt_marked {
+  padding-left: 8px;
+  border-left: 1px solid var(--orange-color);
+}

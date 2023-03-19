@@ -1,6 +1,5 @@
 .delivery {
   margin: 43px auto 34px;
-  width: 1500px;
   width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
@@ -11,11 +10,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 182px;
 }
 
 .delivery__container {
-  height: 100%;
+  height: 182px;
   display: flex;
   gap: 10px;
 }
@@ -55,6 +53,16 @@
   color: #333333;
 }
 
+.delivery__txt-block {
+  width: 488px;
+  margin-top: 47px;
+  margin-bottom: 39px;
+}
+
+.delivery__txt-block .txt {
+  font-weight: 400;
+}
+
 @media screen and (max-width: 767px) {
   .delivery__img {
     display: none;
@@ -73,5 +81,9 @@
     width: 100%;
     box-sizing: border-box;
     padding: 0 10px;
+  }
+
+  .delivery__txt-block {
+    display: none;
   }
 }
