@@ -1,7 +1,7 @@
 import PopupWithImage from "../components/PopupWithImage.js";
 import OrderForm from "../components/OrderForm.js";
-import { certificatesImages } from '../utils/constants.js'
 import HeaderMenu from "../components/HeaderMenu.js";
+import { certificatesImages } from '../utils/constants.js';
 
 const headerMenu = new HeaderMenu('header');
 headerMenu.setEventListeners();
