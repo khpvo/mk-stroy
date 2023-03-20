@@ -3,6 +3,12 @@
   margin: 0 auto;
 }
 
+.content_map {
+  width: 1067px;
+  position: relative;
+  left: 184px;
+}
+
 .content__wrapper {
   width: 730px;
   margin-left: auto;
@@ -10,9 +16,19 @@
   min-height: 600px;
 }
 
+.content__wrapper_map {
+  width: 85%;
+}
+
 @media screen and (max-width: 1439px) {
   .content__wrapper {
     width: 650px;
+  }
+
+  .content_map {
+    width: var(--content-width);
+    position: static;
+    left: unset;
   }
 }
 
