@@ -71,7 +71,7 @@ const swiperNews = new Swiper('.news-main__swiper', {
     }
   },
   pagination: {
-    el: ".news__pagination",
+    el: ".news-main__pagination",
     clickable: true,
     renderBullet: function (index, className) {
       return '<span class="' + className + '">' + "</span>";
@@ -79,7 +79,7 @@ const swiperNews = new Swiper('.news-main__swiper', {
   },
 });
 
-const swiperArticle = new Swiper('.article__swiper', {
+const swiperArticle = new Swiper('.article-main__swiper', {
   slidesPerView: 3,
   spaceBetween: 10,
   grabCursor: true,
@@ -96,7 +96,7 @@ const swiperArticle = new Swiper('.article__swiper', {
     },
   },
   pagination: {
-    el: ".article__pagination",
+    el: ".article-main__pagination",
     clickable: true,
     renderBullet: function (index, className) {
       return '<span class="' + className + '">' + "</span>";

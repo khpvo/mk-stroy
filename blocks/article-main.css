@@ -1,40 +1,40 @@
-.article {
+.article-main {
   margin-bottom: 120px;
 }
 
-.article__title {
+.article-main__title {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 25px;
 }
 
-.article__img {
+.article-main__img {
   border-radius: 10px;
   width: 100%;
   height: 160px;
   object-fit: cover;
 }
 
-.article__heading {
+.article-main__heading {
   line-height: 20px;
   margin: 15px 0;
 }
 
-.article__txt {
+.article-main__txt {
   height: 106px;
   overflow: hidden;
   margin-bottom: 20px;
 }
 
-.article__link {
+.article-main__link {
   display: flex;
 }
 
-.article__link:hover.article__link::after {
+.article-main__link:hover.article-main__link::after {
   background-image: url(../images/long-orange-arrow_right.svg);
 }
 
-.article__link::after {
+.article-main__link::after {
   display: block;
   content: '';
   width: 56px;
@@ -43,7 +43,7 @@
   margin-left: 38px;
 }
 
-.article__pagination {
+.article-main__pagination {
   margin: 25px auto 0;
   align-items: center;
   justify-content: space-between;
@@ -52,7 +52,7 @@
   display: none;
 }
 
-.article__pagination .swiper-pagination-bullet {
+.article-main__pagination .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
   background-color: #D9D9D9;
@@ -62,14 +62,14 @@
   transition: all .4s ease;
 }
 
-.article__pagination .swiper-pagination-bullet-active {
+.article-main__pagination .swiper-pagination-bullet-active {
   background-color: var(--orange-color);
   width: 17px;
   height: 17px;
 }
 
 @media screen and (max-width: 1023px) {
-  .article__pagination {
+  .article-main__pagination {
     display: flex;
   }
 }
