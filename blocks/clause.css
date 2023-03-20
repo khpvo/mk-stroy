@@ -1,0 +1,26 @@
+.clause {
+  margin-bottom: 145px;
+}
+
+.clause__title {
+  font-size: 20px;
+}
+
+.clause__date {
+  display: block;
+}
+
+.clause__img {
+  display: block;
+  width: 100%;
+  height: 424px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 21px 0 43px;
+}
+
+@media screen and (max-width: 767px) {
+  .clause__img {
+    height: 281px;
+  }
+}
