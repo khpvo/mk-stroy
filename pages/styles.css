@@ -19,7 +19,7 @@
 @import url(../blocks/hero.css);
 @import url(../blocks/order.css);
 @import url(../blocks/certificates.css);
-@import url(../blocks/news.css);
+@import url(../blocks/news-main.css);
 @import url(../blocks/article.css);
 @import url(../blocks/footer.css);
 @import url(../blocks/popup.css);
@@ -31,3 +31,4 @@
 @import url(../blocks/price-list.css);
 @import url(../blocks/documents.css);
 @import url(../blocks/production.css);
+@import url(../blocks/news.css);

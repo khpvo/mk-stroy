@@ -54,7 +54,7 @@ Array.from(certificatesImages).forEach((img) => {
   })
 });
 
-const swiperNews = new Swiper('.news__swiper', {
+const swiperNews = new Swiper('.news-main__swiper', {
   slidesPerView: 3,
   spaceBetween: 10,
   grabCursor: true,
