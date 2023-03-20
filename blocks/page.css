@@ -3,6 +3,7 @@
   font-family: 'Gilroy', sans-serif;
   box-sizing: border-box;
   color: #000;
+  position: relative;
   --content-width: 1070px;
   --orange-color: #EA662A;
   --dark-background: #212121;
