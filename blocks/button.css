@@ -19,5 +19,6 @@
 
 .button_background_light:hover {
   background-color: transparent;
+  box-shadow: none;
   color: var(--orange-color);
 }
