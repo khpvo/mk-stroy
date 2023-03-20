@@ -175,4 +175,8 @@
   .product__img {
     width: 71px;
   }
+
+  .product__pice {
+    margin-bottom: 12px;
+  }
 }
