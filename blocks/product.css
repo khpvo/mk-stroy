@@ -174,5 +174,10 @@
 
   .product__img {
     width: 71px;
+    margin: 0 auto;
+  }
+
+  .product__price {
+    margin-bottom: 12px;
   }
 }
